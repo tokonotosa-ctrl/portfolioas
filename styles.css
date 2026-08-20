@@ -394,3 +394,32 @@ h4 { margin: 0; font-size: 26px; line-height: 1; letter-spacing: -.035em; }
   .brand-name{font-size:15px;}
   .feature-card-main .image-visual img{padding:10px;}
 }
+
+
+/* v5 refinements */
+:root, html[data-theme="accent"] { --accent:#d10f69; --accent-2:#f06b2d; --accent-soft:#f8dfe9; }
+.eyebrow::before { content:""; display:inline-block; width:18px; height:2px; margin-right:9px; vertical-align:middle; background:var(--accent); border-radius:999px; }
+.case-domain { margin:10px 0 0; font-size:clamp(26px,2.5vw,38px); line-height:1.05; font-weight:680; letter-spacing:-.035em; color:var(--strong); }
+.project-name { margin:12px 0 0 !important; font-size:clamp(17px,1.45vw,21px) !important; line-height:1.2 !important; font-weight:760; letter-spacing:-.015em; color:var(--accent) !important; }
+.archive-domain { margin:7px 0 0; font-size:14px; line-height:1.3; font-weight:650; letter-spacing:-.01em; color:var(--strong); }
+.archive-project { margin:6px 0 0 !important; font-size:16px !important; line-height:1.2 !important; font-weight:780; letter-spacing:-.01em; color:var(--accent) !important; }
+.timeline-item:hover .timeline-years, .contact-link:hover, .desktop-nav a:hover, .mobile-nav a:hover { color:var(--accent); }
+.timeline-item { border-left:2px solid transparent; padding-left:16px; margin-left:-18px; }
+.timeline-item:hover { border-left-color:var(--accent); }
+.button.primary { box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--accent) 70%, transparent); }
+.feature-card:hover, .archive-card:hover { border-color:color-mix(in srgb,var(--accent) 34%, var(--line)); }
+
+/* v6: image framing and final card corrections */
+.feature-card-main .image-visual img {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  background: transparent;
+}
+.archive-card[href*="Green-pay"] .archive-art {
+  background: #292826;
+}
+.archive-card[href*="Green-pay"] .archive-art img {
+  object-fit: contain;
+  object-position: center;
+}
