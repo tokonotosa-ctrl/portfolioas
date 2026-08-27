@@ -1,196 +1,191 @@
 <!doctype html>
-<html lang="ru" data-theme="accent">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Alexey Savinykh — Product Designer working across UX, UI, systems and prototyping." />
-  <meta name="color-scheme" content="light dark" />
-  <title>Alexey Savinykh — Product Designer</title>
+  <meta name="description" content="Алексей Савиных — Product / UX/UI Designer. Интерфейсы, визуальные системы, прототипирование и продуктовый дизайн." />
+  <title>Алексей Савиных — Product / UX/UI Designer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержимому</a>
 
   <header class="site-header" id="top">
     <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Alexey Savinykh — home">
+      <a class="brand" href="#top" aria-label="Алексей Савиных — главная">
+        <span class="brand-mark">AS</span>
         <span class="brand-name" data-i18n="brandName">Алексей Савиных</span>
-        <span class="brand-role" data-i18n="roleShort">Product Designer</span>
       </a>
 
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#work" data-i18n="navWork">Work</a>
-        <a href="#experience" data-i18n="navExperience">Experience</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#about" data-i18n="navAbout">Обо мне</a>
+        <a href="#work" data-i18n="navWork">Работы</a>
+        <a href="#experience" data-i18n="navExperience">Опыт</a>
+        <a href="#contact" data-i18n="navContact">Контакты</a>
       </nav>
 
-      <div class="header-controls">
-        <div class="segmented compact" role="group" aria-label="Language">
-          <button class="seg-btn is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
-          <button class="seg-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Language">
+          <button class="lang-btn is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel">
-          <span class="sr-only" data-i18n="menu">Menu</span>
-          <span></span><span></span>
-        </button>
+        <a class="cv-link" href="https://drive.google.com/file/d/1H_s0ojrtbCo3EBp_ZT7xwTFtt6R-jJSQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="cvShort">CV ↗</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span><span class="sr-only" data-i18n="menu">Меню</span></button>
       </div>
     </div>
-
     <div class="mobile-panel" id="mobile-panel" hidden>
-      <nav class="mobile-nav" aria-label="Mobile navigation">
-        <a href="#work" data-i18n="navWork">Work</a>
-        <a href="#experience" data-i18n="navExperience">Experience</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+      <nav>
+        <a href="#about" data-i18n="navAbout">Обо мне</a>
+        <a href="#work" data-i18n="navWork">Работы</a>
+        <a href="#experience" data-i18n="navExperience">Опыт</a>
+        <a href="#contact" data-i18n="navContact">Контакты</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero section-pad">
-      <div class="shell hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow" data-i18n="heroEyebrow">Product design · UX · UI · Systems</p>
-          <h1 data-i18n="heroTitle">Digital products that make complex systems feel clear.</h1>
-          <p class="hero-lede" data-i18n="heroLead">Product designer with 10+ years of experience across consumer services, mapping and analytical tools, mobile products and e-commerce.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work" data-i18n="viewWork">View selected work</a>
-            <a class="button quiet" href="mailto:ogastas@icloud.com">ogastas@icloud.com</a>
+      <div class="shell">
+        <p class="status-line reveal" data-i18n="statusLine">Product / UX/UI Designer · интерфейсы · визуальные системы · прототипирование</p>
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <h1 data-i18n="heroTitle">Алексей Савиных</h1>
+            <p class="hero-role">Product / UX/UI Designer</p>
+            <p class="hero-lede" data-i18n="heroLead">Проектирую цифровые продукты с сильной визуальной системой — от структуры интерфейса и сценариев до hi-fi UI, прототипов и дизайн-систем.</p>
+            <p class="domain-line" data-i18n="domainLine">Домашние сервисы · картография и аналитика · мобильность · путешествия · социальные продукты · e-commerce</p>
+            <div class="hero-actions-row">
+              <a class="button primary" href="#work" data-i18n="viewWork">Смотреть работы</a>
+              <a class="button secondary" href="mailto:ogastas@icloud.com">ogastas@icloud.com</a>
+            </div>
           </div>
+
+          <figure class="hero-photo reveal">
+            <img src="assets/alexey.jpg" alt="Алексей Савиных, Product / UX/UI Designer" />
+          </figure>
         </div>
 
-        <aside class="hero-portrait reveal" aria-label="Alexey Savinykh">
-          <div class="portrait-surface photo-surface">
-            <img class="designer-photo" src="assets/alexey.jpg" alt="Alexey Savinykh, Product Designer" />
-
-          </div>
-        </aside>
+        <div class="fact-strip reveal" aria-label="Professional facts">
+          <div><strong>10+</strong><span data-i18n="factYears">лет в дизайне</span></div>
+          <div><strong>Web / iOS / Android</strong><span data-i18n="factPlatforms">цифровые продукты на разных платформах</span></div>
+          <div><strong>UX → UI</strong><span data-i18n="factRange">от структуры и сценариев до финальной визуализации</span></div>
+          <div><strong>Systems</strong><span data-i18n="factSystems">дизайн-системы, компоненты и паттерны</span></div>
+        </div>
       </div>
+    </section>
 
+    <section class="practice section-pad" id="about">
+      <div class="shell">
+        <div class="section-index">01 <span data-i18n="whatIDo">Что я делаю</span></div>
+        <div class="practice-grid">
+          <article class="practice-card reveal"><span>01</span><h2 data-i18n="p1Title">Visual direction</h2><p data-i18n="p1Text">Собираю визуальный язык продукта: типографика, композиция, цвет, иконки, иллюстрация и целостность интерфейса.</p></article>
+          <article class="practice-card reveal"><span>02</span><h2 data-i18n="p2Title">Interface design</h2><p data-i18n="p2Text">Проектирую понятные интерфейсы для мобильных и веб-продуктов — от пользовательских сценариев до hi-fi экранов.</p></article>
+          <article class="practice-card reveal"><span>03</span><h2 data-i18n="p3Title">Design systems</h2><p data-i18n="p3Text">Строю компоненты, состояния и паттерны, чтобы продукт сохранял визуальную и функциональную целостность по мере роста.</p></article>
+          <article class="practice-card reveal"><span>04</span><h2 data-i18n="p4Title">Prototype & handoff</h2><p data-i18n="p4Text">Делаю прототипы, анимацию и спецификации, работаю с разработкой до реализации интерфейса.</p></article>
+        </div>
+
+        <div class="about-block reveal">
+          <div class="section-index">02 <span data-i18n="aboutEyebrow">Обо мне</span></div>
+          <div class="about-copy">
+            <p class="about-big" data-i18n="aboutLead">Я работаю на стыке продуктового дизайна и сильной визуализации. Мне важны не только логика и сценарий, но и то, насколько точно продукт выглядит, читается и ощущается в использовании.</p>
+            <div class="about-columns">
+              <p data-i18n="aboutP1">В опыте — пользовательские сервисы, картографические и аналитические продукты, мобильные приложения, travel, social и e-commerce.</p>
+              <p data-i18n="aboutP2">Образование в живописи и художественной педагогике даёт визуальную базу, которую я переношу в интерфейсы: композицию, иерархию, работу с цветом, ритмом и деталями.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="work section-pad" id="work">
       <div class="shell">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow" data-i18n="selectedWork">Selected work</p>
-            <h2 data-i18n="workTitle">A mix of consumer products and complex internal tools.</h2>
+        <div class="work-head reveal">
+          <div class="section-index">03 <span data-i18n="selectedWork">Избранные работы</span></div>
+          <h2 data-i18n="workTitle">Разные продуктовые контексты. Один акцент — ясный и сильный интерфейс.</h2>
+          <p data-i18n="workIntro">Здесь показаны реальные публичные проекты. Без выдуманных метрик и без попытки представить каждую работу как исследовательский кейс.</p>
+        </div>
+
+        <div class="case-list">
+          <a class="case-row reveal" href="domovyonok.html">
+            <div class="case-copy">
+              <p class="case-meta">01 · 2023–2026 · Product Design · Web / Mobile</p>
+              <h3 data-i18n="domTitle">Домовёнок</h3>
+              <p class="case-domain" data-i18n="domDomain">Домашние сервисы и e-commerce</p>
+              <p data-i18n="domDesc">Мультиролевой сервис домашних услуг: клиентское приложение, интерфейсы исполнителей, сайт и дизайн-система.</p>
+              <div class="tags"><span>UI</span><span>Design system</span><span>Prototype</span><span>Web / Mobile</span></div>
+              <span class="case-cta" data-i18n="viewCase">Смотреть кейс →</span>
+            </div>
+            <div class="case-image"><img src="assets/domovyonok-card.jpeg" alt="Интерфейсы сервиса Домовёнок" /></div>
+          </a>
+
+          <a class="case-row reveal" href="https://www.behance.net/gallery/94666005/Date" target="_blank" rel="noopener noreferrer">
+            <div class="case-copy">
+              <p class="case-meta">02 · 2020 · Mobile UI</p>
+              <h3>Date</h3>
+              <p class="case-domain" data-i18n="dateDomain">Социальный мобильный продукт</p>
+              <p data-i18n="dateDesc">Проект мобильного интерфейса с выраженной визуальной подачей и сфокусированной продуктовой логикой.</p>
+              <div class="tags"><span>Mobile UI</span><span>Interaction</span><span>Visual design</span></div>
+              <span class="case-cta" data-i18n="viewCase">Смотреть кейс →</span>
+            </div>
+            <div class="case-image"><img src="assets/date.png" alt="Date mobile application interface" /></div>
+          </a>
+
+          <a class="case-row reveal" href="https://www.behance.net/gallery/38223823/mobilnyj-putevoditel-TopTripTip" target="_blank" rel="noopener noreferrer">
+            <div class="case-copy"><p class="case-meta">03 · 2016 · iOS / Android</p><h3>TopTripTip</h3><p class="case-domain" data-i18n="tripDomain">Путешествия и навигация</p><p data-i18n="tripDesc">Мобильный путеводитель для iOS и Android.</p><div class="tags"><span>Mobile</span><span>Travel</span><span>UI</span></div><span class="case-cta" data-i18n="viewProject">Открыть проект →</span></div>
+            <div class="case-image"><img src="assets/toptriptip.png" alt="TopTripTip mobile travel guide" /></div>
+          </a>
+
+          <a class="case-row reveal" href="https://www.behance.net/gallery/38446817/mobilnoe-prilozhenie-pozvonite-roditeljam" target="_blank" rel="noopener noreferrer">
+            <div class="case-copy"><p class="case-meta">04 · 2016 · Mobile</p><h3 data-i18n="callTitle">Позвоните родителям</h3><p class="case-domain" data-i18n="callDomain">Социальный сервис</p><p data-i18n="callDesc">Приложение-напоминание для связи с родными и близкими.</p><div class="tags"><span>Mobile</span><span>Utility</span><span>Visual design</span></div><span class="case-cta" data-i18n="viewProject">Открыть проект →</span></div>
+            <div class="case-image"><img src="assets/call-your-parents.png" alt="Позвоните родителям" /></div>
+          </a>
+        </div>
+
+        <div class="compact-work reveal">
+          <div class="compact-head"><h3 data-i18n="earlierTitle">Ещё публичные работы</h3><p data-i18n="earlierIntro">Ранние проекты показывают диапазон визуальной и интерфейсной практики.</p></div>
+          <div class="compact-grid">
+            <a href="https://www.behance.net/gallery/161971829/Oder" target="_blank" rel="noopener noreferrer"><div class="compact-img"><img src="assets/oder.jpg" alt="Oder" /></div><span data-i18n="oderDomain">Мобильность и транспорт</span><strong>Oder</strong><em>↗</em></a>
+            <a href="https://www.behance.net/gallery/161954675/Green-pay" target="_blank" rel="noopener noreferrer"><div class="compact-img"><img src="assets/green-pay.png" alt="Green Pay" /></div><span data-i18n="greenDomain">Городские сервисы и парковка</span><strong>Green Pay</strong><em>↗</em></a>
           </div>
-          <p data-i18n="workIntro">The selection prioritizes recent product work, recognizable consumer experience and systems with higher interaction complexity.</p>
-        </div>
-
-        <div class="featured-cases featured-primary">
-          <article class="feature-card feature-card-main reveal">
-            <a href="domovyonok.html">
-              <div class="feature-visual image-visual"><img src="assets/domovyonok-card.jpeg" alt="Интерфейсы сервиса Домовёнок на планшете и смартфоне" /></div>
-              <div class="feature-info"><div class="feature-copy"><div class="case-kicker"><span>01</span><span data-i18n="domKicker">Product design · 2023–2026</span></div><p class="case-domain" data-i18n="domDomain">Home services &amp; e-commerce</p><h3 class="project-name" data-i18n="domTitle">Domovyonok</h3><p data-i18n="domDesc">Home-services platform: product design, interfaces, prototyping and design system.</p></div><span class="open-mark" aria-hidden="true">↗</span></div>
-            </a>
-          </article>
-          <article class="feature-card feature-card-secondary reveal">
-            <a href="https://www.behance.net/gallery/94666005/Date" target="_blank" rel="noopener noreferrer">
-              <div class="feature-visual image-visual"><img src="assets/date.jpg" alt="Date mobile application interface shown on a smartphone" /></div>
-              <div class="feature-info"><div class="feature-copy"><div class="case-kicker"><span>02</span><span data-i18n="dateKicker">Mobile product · 2020</span></div><p class="case-domain" data-i18n="dateDomain">Social mobile products</p><h3 class="project-name">Date</h3><p data-i18n="dateDesc">Mobile interface design project.</p></div><span class="open-mark" aria-hidden="true">↗</span></div>
-            </a>
-          </article>
-        </div>
-
-        <div class="archive-heading reveal earlier-heading">
-          <p class="eyebrow" data-i18n="archiveEyebrow">Earlier work</p>
-          <h3 data-i18n="archiveTitle">Different product domains, one design practice.</h3>
-        </div>
-        <div class="archive-grid four-up">
-          <a class="archive-card reveal" href="https://www.behance.net/gallery/38223823/mobilnyj-putevoditel-TopTripTip" target="_blank" rel="noopener noreferrer">
-            <div class="archive-art archive-image logo-contain green-bg"><img src="assets/toptriptip.png" alt="TopTripTip mobile travel guide logo" /></div>
-            <div><span class="archive-year">2016</span><p class="archive-domain" data-i18n="tripDomain">Travel &amp; navigation</p><h4 class="archive-project">TopTripTip</h4><p data-i18n="tripDesc">Mobile travel guide for iOS and Android.</p></div><span>↗</span>
-          </a>
-          <a class="archive-card reveal" href="https://www.behance.net/gallery/38446817/mobilnoe-prilozhenie-pozvonite-roditeljam" target="_blank" rel="noopener noreferrer">
-            <div class="archive-art archive-image logo-contain red-bg"><img src="assets/call-your-parents.png" alt="Call Your Parents mobile application logo" /></div>
-            <div><span class="archive-year">2016</span><p class="archive-domain" data-i18n="callDomain">Social utility</p><h4 class="archive-project" data-i18n="callTitle">Call Your Parents</h4><p data-i18n="callDesc">A reminder app for staying in touch with family.</p></div><span>↗</span>
-          </a>
-          <a class="archive-card reveal" href="https://www.behance.net/gallery/161971829/Oder" target="_blank" rel="noopener noreferrer">
-            <div class="archive-art archive-image"><img src="assets/oder.jpg" alt="Oder mobile application project cover" /></div>
-            <div><span class="archive-year" data-i18n="earlierLabel">Earlier work</span><p class="archive-domain" data-i18n="oderDomain">Mobility &amp; transport</p><h4 class="archive-project">Oder</h4><p data-i18n="oderDesc">Mobile application interface for taxi drivers.</p></div><span>↗</span>
-          </a>
-          <a class="archive-card reveal" href="https://www.behance.net/gallery/161954675/Green-pay" target="_blank" rel="noopener noreferrer">
-            <div class="archive-art archive-image"><img src="assets/green-pay.jpg" alt="Green Pay smart parking system project cover" /></div>
-            <div><span class="archive-year" data-i18n="earlierLabel">Earlier work</span><p class="archive-domain" data-i18n="greenDomain">Urban services &amp; parking</p><h4 class="archive-project">Green Pay</h4><p data-i18n="greenDesc">Smart parking system interface project.</p></div><span>↗</span>
-          </a>
         </div>
 
         <div class="private-work reveal">
-          <p class="eyebrow" data-i18n="privateEyebrow">Private work</p>
-          <div><h3 data-i18n="privateTitle">More work is available on request.</h3><p data-i18n="privateText">Some projects cannot be published because of confidentiality agreements. Private examples include an online store and web services.</p><a class="button primary" href="mailto:ogastas@icloud.com?subject=Portfolio%20request" data-i18n="privateCta">Request private work</a></div>
+          <div><span class="section-index">Private</span><h3 data-i18n="privateTitle">Часть работ доступна только по запросу.</h3></div>
+          <div><p data-i18n="privateText">Некоторые проекты нельзя публиковать по условиям соглашений о конфиденциальности. Среди них — интернет-магазин и веб-сервисы.</p><a class="button secondary" href="mailto:ogastas@icloud.com?subject=Portfolio%20request" data-i18n="privateCta">Запросить закрытые работы</a></div>
         </div>
       </div>
     </section>
 
     <section class="experience section-pad" id="experience">
       <div class="shell">
-        <div class="section-heading reveal">
-          <div><p class="eyebrow" data-i18n="experienceEyebrow">Experience</p><h2 data-i18n="experienceTitle">Product work backed by a broader visual-design foundation.</h2></div>
-          <p data-i18n="experienceIntro">The career path moves from graphic and interface design into product systems, research, prototypes and implementation collaboration.</p>
-        </div>
-
+        <div class="experience-head reveal"><div class="section-index">04 <span data-i18n="experienceEyebrow">Опыт</span></div><h2 data-i18n="experienceTitle">От визуального и интерфейсного дизайна к продуктовым системам.</h2></div>
         <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-years">2023—2026</div><div class="timeline-main"><h3 data-i18n="domCompany">Domovyonok · Product Designer</h3><p data-i18n="domExp">Research, analysis, prototyping, interface design, icons, presentations and marketing assets; design system, animation and interaction patterns; collaboration with development and implementation review.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-years">2020—2022</div><div class="timeline-main"><h3>MTS · <span data-i18n="productDesigner">Product Designer</span></h3><p data-i18n="mtsExp">Internal services including a cartographic information and analytics product, equipment ordering and infrastructure tooling.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-years">2017—2019</div><div class="timeline-main"><h3>ZeroTech · UI/UX Designer</h3><p data-i18n="zeroExp">Web design, identity and advertising.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-years">2013—2016</div><div class="timeline-main"><h3>AppReal · UI/UX Designer</h3><p data-i18n="apprealExp">Web and mobile interfaces, illustration, presentations, identity, print and advertising.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-years">2012—2013</div><div class="timeline-main"><h3>Tiko · UI/UX Designer</h3><p data-i18n="tikoExp">E-commerce, catalogues, POS materials, outdoor advertising and 3D project visualization.</p></div></article>
+          <article class="timeline-item reveal"><time>2023—2026</time><div><h3 data-i18n="domCompany">Домовёнок · Дизайнер продукта</h3><p data-i18n="domExp">Интерфейсы, прототипирование, дизайн-система, анимация и паттерны взаимодействия; иконки, презентации и визуальные материалы; взаимодействие с разработкой и контроль реализации.</p></div></article>
+          <article class="timeline-item reveal"><time>2020—2022</time><div><h3>MTS · <span data-i18n="productDesigner">Дизайнер продукта</span></h3><p data-i18n="mtsExp">Внутренние цифровые сервисы: картографический информационно-аналитический продукт, заказ оборудования и инфраструктурные инструменты.</p></div></article>
+          <article class="timeline-item reveal"><time>2017—2019</time><div><h3>ZeroTech · UI/UX Designer</h3><p data-i18n="zeroExp">Веб-дизайн, фирменный стиль и рекламные материалы.</p></div></article>
+          <article class="timeline-item reveal"><time>2013—2016</time><div><h3>AppReal · UI/UX Designer</h3><p data-i18n="apprealExp">Веб- и мобильные интерфейсы, иллюстрации, презентации, фирменный стиль, полиграфия и реклама.</p></div></article>
+          <article class="timeline-item reveal"><time>2012—2013</time><div><h3>Tiko · UI/UX Designer</h3><p data-i18n="tikoExp">Интернет-магазин, каталоги, POS-материалы, наружная реклама и 3D-визуализация проектов.</p></div></article>
         </div>
-      </div>
-    </section>
-
-    <section class="about section-pad" id="about">
-      <div class="shell about-grid">
-        <div class="about-lead reveal">
-          <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
-          <h2 data-i18n="aboutTitle">Design from structure to surface.</h2>
+        <div class="credentials reveal">
+          <div><span data-i18n="educationLabel">Образование</span><strong data-i18n="educationText">Саратовское художественное училище · Живопись · Художник / преподаватель · 2010</strong></div>
+          <div><span data-i18n="toolsLabel">Инструменты</span><strong>Figma · Sketch · Principle · Miro · Adobe CC</strong></div>
+          <div><span data-i18n="languagesLabel">Языки</span><strong data-i18n="languagesText">Русский — родной · Английский — B1</strong></div>
         </div>
-        <div class="about-copy reveal">
-          <p class="large-copy" data-i18n="aboutP1">I work across UX, UI, analytics, illustration and design systems, with experience in high-load systems, mapping platforms, consumer services, travel, dating and e-commerce.</p>
-          <p data-i18n="aboutP2">My background in painting and art education adds a strong visual foundation, while recent product roles focus on research, system logic, prototyping and collaboration with engineering.</p>
-        </div>
-      </div>
-
-      <div class="shell capability-grid reveal">
-        <div class="capability"><span>01</span><strong>Product Design</strong></div>
-        <div class="capability"><span>02</span><strong>UX</strong></div>
-        <div class="capability"><span>03</span><strong>UI</strong></div>
-        <div class="capability"><span>04</span><strong>Systems</strong></div>
-        <div class="capability"><span>05</span><strong>Prototyping</strong></div>
-        <div class="capability"><span>06</span><strong>Level Design</strong></div>
-      </div>
-
-      <div class="shell facts reveal">
-        <div><span data-i18n="educationLabel">Education</span><strong data-i18n="educationText">Saratov Art College · Painting · Artist / Teacher · 2010</strong></div>
-        <div><span data-i18n="toolsLabel">Selected tools</span><strong>Figma · Sketch · Principle · Miro · Adobe CC</strong></div>
-        <div><span data-i18n="languagesLabel">Languages</span><strong data-i18n="languagesText">Russian — native · English — B1</strong></div>
       </div>
     </section>
 
     <section class="contact section-pad" id="contact">
-      <div class="shell">
-        <div class="contact-card reveal">
-          <div>
-            <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
-            <h2 data-i18n="contactTitle">Looking for a product designer who can work from logic to final interface?</h2>
-          </div>
-          <div class="contact-actions">
-            <a class="contact-link" href="mailto:ogastas@icloud.com">ogastas@icloud.com <span>↗</span></a>
-            <a class="contact-link secondary-link" href="https://drive.google.com/file/d/1H_s0ojrtbCo3EBp_ZT7xwTFtt6R-jJSQ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span data-i18n="cvLink">CV / résumé</span> <span>↗</span></a>
-            <p data-i18n="contactNote">Open to remote product design roles and selected project work.</p>
-          </div>
+      <div class="shell contact-wrap reveal">
+        <div class="section-index">05 <span data-i18n="contactEyebrow">Контакты</span></div>
+        <h2 data-i18n="contactTitle">Ищу задачи, где важны и продуктовая логика, и качество визуального исполнения.</h2>
+        <div class="contact-links">
+          <a href="mailto:ogastas@icloud.com"><span>ogastas@icloud.com</span><span>↗</span></a>
+          <a href="https://drive.google.com/file/d/1H_s0ojrtbCo3EBp_ZT7xwTFtt6R-jJSQ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span data-i18n="cvLink">Скачать CV</span><span>↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-inner"><span>© <span id="year"></span> Alexey Savinykh</span><a href="#top" data-i18n="backTop">Back to top ↑</a></div>
-  </footer>
-
+  <footer><div class="shell"><span>© <span id="year"></span> <span data-i18n="brandName">Алексей Савиных</span></span><a href="#top" data-i18n="backTop">Наверх ↑</a></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
