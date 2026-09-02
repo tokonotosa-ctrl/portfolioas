@@ -178,3 +178,10 @@ footer{display:none}
 /* Sephora private case: supplied official logo asset */
 .request-group .portfolio-card:nth-child(2) .portfolio-card-image{background:#fff}
 .request-group .portfolio-card:nth-child(2) .portfolio-card-image img{object-fit:contain;object-position:center;padding:8%;box-sizing:border-box}
+
+/* v45 — mobile About: stack portrait after intro actions */
+@media(max-width:680px){
+  .hero-grid{grid-template-columns:1fr;gap:28px;align-items:start}
+  .hero-copy,.hero-photo{min-width:0}
+  .hero-photo{width:100%;max-width:none;aspect-ratio:4/5;margin:0}
+}
